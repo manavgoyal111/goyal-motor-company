@@ -11,10 +11,10 @@ function App() {
 			<Router>
 				<Navbar />
 				<Routes>
-					{/* <Route path="/" element={<Quotation />} />
+					<Route path="/" element={<Quotation />} />
 					<Route path="/gmc" element={<Quotation />} />
 					<Route path="/quotation" element={<Quotation />} />
-					<Route path="/letter" element={<Letter />} /> */}
+					<Route path="/letter" element={<Letter />} />
 				</Routes>
 			</Router>
 		</div>
