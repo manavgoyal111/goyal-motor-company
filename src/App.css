@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+:root {
+	--textHeight: 30px;
+	--textFont: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+textarea {
+	border: none;
+	resize: vertical;
+	overflow: hidden;
+	font-size: var(--textFont);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.textArea {
+	width: 15rem;
+	height: var(--textHeight);
+  resize: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.printBody {
+	width: 40rem;
 }
 
-.App-link {
-  color: #61dafb;
+#quotationTable {
+	width: 100%;
+	/* overflow: hidden; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tableHeading > th {
+	padding: 0;
+}
+
+#tableRow > td {
+	cursor: pointer;
+	/* height: var(--textHeight); */
+	padding: 0 5px;
+	font-size: var(--textFont);
+}
+
+#responsiveText {
+	font-size: var(--textFont);
+}
+
+#marginNotReduce {
+	margin-top: 2rem;
+}
+
+#marginReduce {
+	margin-top: 0;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: black;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: black;
+}
+
+@media only screen and (max-width: 600px) {
+	#navLength {
+		width: 45rem;
+	}
+
+	#quotationBody {
+		width: 40rem;
+		margin: 0 2rem;
+	}
+
+	.formInputs {
+		flex-direction: column;
+		width: 30rem;
+		/* overflow: scroll; */
+	}
 }

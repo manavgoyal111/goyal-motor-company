@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Quotation from "./components/Quotation";
+import Letter from "./components/Letter";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<Router>
+				<Navbar />
+				<Routes>
+					{/* <Route path="/" element={<Quotation />} />
+					<Route path="/gmc" element={<Quotation />} />
+					<Route path="/quotation" element={<Quotation />} />
+					<Route path="/letter" element={<Letter />} /> */}
+				</Routes>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
+
+// Make every Text Customizable
+// Save Letter data in Local Storage
