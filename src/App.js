@@ -12,7 +12,6 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Quotation />} />
-					<Route path="/gmc" element={<Quotation />} />
 					<Route path="/quotation" element={<Quotation />} />
 					<Route path="/letter" element={<Letter />} />
 				</Routes>
